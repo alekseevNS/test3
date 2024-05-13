@@ -1,0 +1,28 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block scripts %}
+  <script src="{% static 'ajax_site/scripts/blog_page.js' %}" defer></script>
+{% endblock %}
+
+{% block main %}
+  <div class="card" id="blogCard">
+    <div class="card-body">
+      <h5 class="card-title"><span id="blogTitle"></span></h5>
+      <p class="card-text">
+        <span id="blogText"></span>
+      </p>
+    </div>
+  </div>
+  <div class="mt-2">
+    {% for blog_item in blog_items %}
+      <div class="card mt-2">
+        <div class="card-body">
+          <h5 class="card-title">{{ blog_item.title }}</h5>
+          <p class="card-text">{{ blog_item.text }}</p>
+          <button class="btn btn-primary" type="button">{{ blog_item.id }}</button>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+{% endblock %}

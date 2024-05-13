@@ -22,4 +22,6 @@ import ajax_site.views
 urlpatterns = [
     path("", ajax_site.views.index_page),
     path("json_test/", ajax_site.views.json_answer),
+    path("blog/", ajax_site.views.blog_page),
+    path("get_blog/", ajax_site.views.get_blog),
 ]
