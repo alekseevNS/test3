@@ -1,0 +1,11 @@
+.vscode/settings.json
+ajax_server/__pycache__/__init__.cpython-312.pyc
+ajax_server/__pycache__/settings.cpython-312.pyc
+ajax_server/__pycache__/urls.cpython-312.pyc
+ajax_server/__pycache__/wsgi.cpython-312.pyc
+ajax_site/__pycache__/__init__.cpython-312.pyc
+ajax_site/__pycache__/admin.cpython-312.pyc
+ajax_site/__pycache__/apps.cpython-312.pyc
+ajax_site/__pycache__/models.cpython-312.pyc
+ajax_site/__pycache__/views.cpython-312.pyc
+ajax_site/migrations/__pycache__/__init__.cpython-312.pyc
