@@ -1,5 +1,17 @@
 {% extends 'base/base.html' %}
+{% load static %}
+
+{% block scripts %}
+  <script src="{% static 'ajax_site/scripts/index_page.js' %}" defer></script>
+{% endblock %}
 
 {% block main %}
-  <h1 class="mt-2">Всем привет!</h1>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Просто проверка того, что JS-скрипты подключаются корректно</h5>
+      <div class="d-grid gap-2">
+        <button class="btn btn-primary" type="button">Проверить работу скриптов на странице</button>
+      </div>
+    </div>
+  </div>
 {% endblock %}
