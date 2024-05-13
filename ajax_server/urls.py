@@ -19,4 +19,7 @@ from django.urls import path
 
 import ajax_site.views
 
-urlpatterns = [path("", ajax_site.views.index_page)]
+urlpatterns = [
+    path("", ajax_site.views.index_page),
+    path("json_test/", ajax_site.views.json_answer),
+]
